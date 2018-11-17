@@ -1,0 +1,6 @@
+usr/local/bin/bluemn-qt usr/bin
+share/pixmaps/bluemn32.xpm usr/share/pixmaps
+share/pixmaps/bluemn16.xpm usr/share/pixmaps
+share/pixmaps/bluemn128.png usr/share/pixmaps
+debian/bluemn-qt.desktop usr/share/applications
+debian/bluemn-qt.protocol usr/share/kde4/services/

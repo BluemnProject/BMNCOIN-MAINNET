@@ -1,0 +1,20 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="bg">locale/bluemn_bg.qm</file>
+        <file alias="de">locale/bluemn_de.qm</file>
+        <file alias="en">locale/bluemn_en.qm</file>
+        <file alias="es">locale/bluemn_es.qm</file>
+        <file alias="fi">locale/bluemn_fi.qm</file>
+        <file alias="fr">locale/bluemn_fr.qm</file>
+        <file alias="it">locale/bluemn_it.qm</file>
+        <file alias="ja">locale/bluemn_ja.qm</file>
+        <file alias="pl">locale/bluemn_pl.qm</file>
+        <file alias="pt">locale/bluemn_pt.qm</file>
+        <file alias="ru">locale/bluemn_ru.qm</file>
+        <file alias="sk">locale/bluemn_sk.qm</file>
+        <file alias="sv">locale/bluemn_sv.qm</file>
+        <file alias="vi">locale/bluemn_vi.qm</file>
+        <file alias="zh_CN">locale/bluemn_zh_CN.qm</file>
+        <file alias="zh_TW">locale/bluemn_zh_TW.qm</file>
+    </qresource>
+</RCC>

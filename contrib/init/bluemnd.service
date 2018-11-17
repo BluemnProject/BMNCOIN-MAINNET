@@ -1,0 +1,22 @@
+[Unit]
+Description=Bluemn's distributed currency daemon
+After=network.target
+
+[Service]
+User=bluemncore
+Group=bluemncore
+
+Type=forking
+PIDFile=/var/lib/bluemnd/bluemnd.pid
+ExecStart=/usr/bin/bluemnd -daemon -pid=/var/lib/bluemnd/bluemnd.pid \
+-conf=/etc/bluemncore/bluemn.conf -datadir=/var/lib/bluemnd -disablewallet
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
