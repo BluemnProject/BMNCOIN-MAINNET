@@ -93,9 +93,6 @@ OptionsDialog::OptionsDialog(QWidget *parent, bool enableWallet) :
 
     /* Theme selector */
     ui->theme->addItem(QString("BLUEMN-light"), QVariant("light"));
-    ui->theme->addItem(QString("BLUEMN-Crownium"), QVariant("crownium"));
-    ui->theme->addItem(QString("BLUEMN-Drkblue"), QVariant("drkblue"));
-    ui->theme->addItem(QString("BLUEMN-Trad"), QVariant("trad"));
 
     /* Language selector */
     QDir translations(":translations");
