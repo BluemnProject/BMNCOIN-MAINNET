@@ -136,8 +136,8 @@ public:
         pchMessageStart[3] = 0x6d;
         vAlertPubKey = ParseHex(MAIN_ALERT_PUB_KEY);
         nDefaultPort = 15003;
-        nMaxTipAge = 24 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
-        nDelayGetHeadersTime = 24 * 24 * 60 * 60;
+        nMaxTipAge = 2 * 60 * 60; // ~144 blocks behind -> 2 x fork detection time, was 24 * 60 * 60 in bitcoin
+        nDelayGetHeadersTime =  48 * 60 * 60;
         nPruneAfterHeight = 100000;
 
         // genesis = CreateGenesisBlock(MAIN_TIMESTAMP, MAIN_NONCE, MAIN_BITS, MAIN_VERSION, SINGLE_BLOCK_REWARD * COIN);
@@ -197,7 +197,8 @@ public:
              boost::assign::map_list_of
              ( 0, uint256S(MAIN_GENESIS))
              ( 6, uint256S("0x00000f9eb77baa8849e63ffaff5889b6708d992556d0eb5ad1e849352aeee664"))
-             ( 27, uint256S("0x00000239c084370cc0028200a9b2605d1677338a0ab96735958525d43b1bb8ae")),
+             ( 27, uint256S("0x00000239c084370cc0028200a9b2605d1677338a0ab96735958525d43b1bb8ae"))
+             ( 404, uint256S("0x000000a96b2edadccf84f4c977fa6e3ffd9fdc097bec87918b7822ddc608b5b5")),
              MAIN_TIMESTAMP, // * UNIX timestamp of last checkpoint block
              0,       // * total number of transactions between genesis and last checkpoint
                          //   (the tx=... number in the SetBestChain debug.log lines)
